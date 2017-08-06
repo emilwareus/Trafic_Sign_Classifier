@@ -88,10 +88,10 @@ My final model results were:
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are six German traffic signs that I found on the web:
 
-![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/0.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/12.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/17.jpg)
-![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/3.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/37.jpg)
+![Label: 0](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/0.jpg) ![Label: 12](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/12.jpg) ![Label: 17](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/17.jpg)
+![Label: 3](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/3.jpg) ![Label: 37](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/37.jpg) ![Label: 38](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/38.jpg)
 
 The first image might be difficult to classify because ...
 
