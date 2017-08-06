@@ -1,2 +1,2 @@
-model_checkpoint_path: "test_LeNet_1"
-all_model_checkpoint_paths: "test_LeNet_1"
+model_checkpoint_path: "test_Incep_3"
+all_model_checkpoint_paths: "test_Incep_3"
