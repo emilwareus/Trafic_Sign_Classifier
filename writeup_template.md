@@ -94,18 +94,24 @@ Here are six German traffic signs that I found on the web:
 ![Label: 3](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/3.jpg) ![Label: 37](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/37.jpg) ![Label: 38](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/38.jpg)
 
 The first image is bright and the label has very few training exampels.
-the second image
+The second image should be easier to classify, as it has a very distinct look compared to the other classes. But it is a bit tilted.
+The third image has a bit of a wierd lighting, but is alos very distinct in shape nad color. 
+The forth sign will probably have some problems in classification, due to that there are many simular signs and it is not completly round as the photo is taken from the side. 
+The fith sign has a little dot in it, which might cause problems. But this image is good and it should be classified correctly. 
+The sixth image is very bright, but evenly so. If dropout did its job this image should be classified on shape and not color. 
+
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Speed limit (20km/h)| Speed limit (30km/h)	| 
+| Priority road     			| Priority road 										|
+| No entry					| No entry											|
+| Speed limit (60km/h)	      		| End of speed limit (80km/h)					 				|
+| Go straight or left			| Go straight or left      							|
+| Keep right			| Keep right      							|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
