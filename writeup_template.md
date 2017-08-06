@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 [image8]: ./examples/placeholder.png "Traffic Sign 5"
 
 ## Rubric Points
-###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
+### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
 
@@ -46,49 +46,39 @@ Numpy was used to calculate some basic statistics of the project.
 * The shape of a traffic sign image is (32, 32, 3) (RBG)
 * The number of unique classes/labels in the data set is 43
 
-####2. Include an exploratory visualization of the dataset.
+#### 2. Include an exploratory visualization of the dataset.
 
 
 ![Number for examples of each class in the training set](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Capture.PNG)
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
-####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale because ...
+As color seems like an importation feature for a trafic sign, grayscale convertion was not used. Instead a one-to-one convolutional layer was put as the first layer for the inputs. This will optimize the color-space for the rest of the model. 
 
-Here is an example of a traffic sign image before and after grayscaling.
+The only pre-processing done on the images was normalization to +- 0.5. This code was used to performe the normalization. 
+X_train_norm = X_train/255-0.5
 
-![alt text][image2]
-
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+Normalization was performed to reduce the size of the paramteters, which helps training. 
 
 
-####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Convolution 1x1 with RELU     	| 1x1 stride, same padding, outputs 32x32x3 	|
+| Inception with RELU 	      	| outputs 32x32x64 				|
+| Max Pooling	    | Stride 2,2 , ksize 3,3 , same padding, outits 16x16x64 	|
+| Inception with RELU 	      	| outputs 16x16x128 				|
+| Max Pooling	    | Stride 2,2 , ksize 3,3 , same padding, outits 8x8x128 	|
+| Fully connected with RELU		| 8192 to 700	|
+| Dropout			| 0.5 keep_prob during training        									|
+|	Fully connected					|	700 to 43|
+|	Softmax					|												|
  
 
 
