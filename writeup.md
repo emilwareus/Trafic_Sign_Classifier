@@ -79,7 +79,7 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model I used the Adam optimizer with a learning rate of 0.001. The learning rate was decresed with 20% every 5th epoch. The batch size was small due to a larg model. This parameter could have been incresed a bit, but this size was a problem before max pooling was implemented and the weights took up a lot of memory. The epochs was first set to 25, but training was canceled after 15 epochs due to decresing the risk of overfitting. 
+To train the model I used the Adam optimizer with a learning rate of 0.001. The learning rate was decresed with 20% every 5th epoch. The batch size was small due to a larg model. So the a batch size of 64 seemed to work best on my computer. This parameter could have been incresed a bit, but this size was a problem before max pooling was implemented and the weights took up a lot of memory. The epochs was first set to 25, but training was canceled after 15 epochs due to decresing the risk of overfitting. 
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
