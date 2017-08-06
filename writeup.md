@@ -38,7 +38,9 @@ Numpy was used to calculate some basic statistics of the project.
 #### 2. Include an exploratory visualization of the dataset.
 
 
-![Number for examples of each class in the training set](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Capture.PNG)
+![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Capture.PNG)
+
+![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Data_Visual.PNG)
 
 ### Design and Test a Model Architecture
 
