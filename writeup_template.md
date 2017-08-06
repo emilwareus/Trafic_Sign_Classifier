@@ -72,9 +72,9 @@ My final model consisted of the following layers:
 | Input         		| 32x32x3 RGB image   							| 
 | Convolution 1x1 with RELU     	| 1x1 stride, same padding, outputs 32x32x3 	|
 | Inception with RELU 	      	| outputs 32x32x64 				|
-| Max Pooling	    | Stride 2,2 , ksize 3,3 , same padding, outits 16x16x64 	|
+| Max Pooling	    | Stride 2,2 , ksize 3,3 , same padding, outputs 16x16x64 	|
 | Inception with RELU 	      	| outputs 16x16x128 				|
-| Max Pooling	    | Stride 2,2 , ksize 3,3 , same padding, outits 8x8x128 	|
+| Max Pooling	    | Stride 2,2 , ksize 3,3 , same padding, outputs 8x8x128 	|
 | Fully connected with RELU		| 8192 to 700	|
 | Dropout			| 0.5 keep_prob during training        									|
 |	Fully connected					|	700 to 43|
