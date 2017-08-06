@@ -72,7 +72,7 @@ My final model consisted of the following layers:
  
  Here is the graph visualized in Tensorboard:
  
-![Graph](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Graph.PNG)
+![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Graph.PNG)
 
 
 
@@ -96,8 +96,8 @@ My final model results were:
 
 Here are six German traffic signs that I found on the web:
 
-![Label: 0](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/0.jpg) ![Label: 12](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/12.jpg) ![Label: 17](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/17.jpg)
-![Label: 3](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/3.jpg) ![Label: 37](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/37.jpg) ![Label: 38](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/38.jpg)
+![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/0.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/12.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/17.jpg)
+![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/3.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/37.jpg) ![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/test_img/38.jpg)
 
 The first image is bright and the label has very few training exampels.
 The second image should be easier to classify, as it has a very distinct look compared to the other classes. But it is a bit tilted.
@@ -124,7 +124,7 @@ The model was able to correctly guess 4 of the 6 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-![Top5](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Capture2.PNG)
+![alt text](https://github.com/emilwareus/Trafic_Sign_Classifier/blob/master/img_for_redme/Capture2.PNG)
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 ####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
