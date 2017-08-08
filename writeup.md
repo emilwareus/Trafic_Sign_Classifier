@@ -46,7 +46,7 @@ Numpy was used to calculate some basic statistics of the project.
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As color seems like an importation feature for a trafic sign, grayscale convertion was not used. Instead a one-to-one convolutional layer was put as the first layer for the inputs. This will optimize the color-space for the rest of the model. 
+As color seems like an importation feature for a trafic sign, grayscale convertion was not used. Instead a one-to-one convolutional layer was put as the first layer for the inputs. This will optimize the color-space for the rest of the model. This was an initial decision and it might be a potential improvement to convert to grayscale. I had a thought of adding a grayscale layer to the image-data, making the data 32x32x4. 
 
 The only pre-processing done on the images was normalization to +- 0.5. This code was used to performe the normalization. 
 X_train_norm = X_train/255-0.5
@@ -103,7 +103,7 @@ Here are six German traffic signs that I found on the web:
 
 The first image is bright and the label has very few training exampels.
 The second image should be easier to classify, as it has a very distinct look compared to the other classes. But it is a bit tilted.
-The third image has a bit of a wierd lighting, but is alos very distinct in shape nad color. 
+The third image has a bit of a wierd lighting, but is alos very distinct in shape and color. 
 The forth sign will probably have some problems in classification, due to that there are many simular signs and it is not completly round as the photo is taken from the side. 
 The fith sign has a little dot in it, which might cause problems. But this image is good and it should be classified correctly. 
 The sixth image is very bright, but evenly so. If dropout did its job this image should be classified on shape and not color. 
